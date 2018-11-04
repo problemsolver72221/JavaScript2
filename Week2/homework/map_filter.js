@@ -10,9 +10,6 @@ const oddOnes = numbers.filter(i => i % 2 != 0)
 
 //Double the odds and kick out the evens:
 
-const oddDoubling = oddOnes.map(i => {
-    if (i % 2 != 0) {return i * 2;}
-    else {return i;}
-})
+const oddDoubling = oddOnes.map(i => i * 2)
 
 console.log("Doubled lucky odds: " + oddDoubling + "\nUnlucky kicked evens: " +oddOnes);
